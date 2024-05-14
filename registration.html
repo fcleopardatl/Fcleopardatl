@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fc Leopard Atl</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="content/Site.css" />
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+      <nav class="menu">
+        <a href="index.html" class="w3-bar-item w3-button w3-red">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button">About</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+        <a href="donation.html" class="w3-bar-item w3-button">Donation</a>
+		<a href="registration.html" class="w3-bar-item w3-button">Registration</a>
+    </nav>
+    
+    <div class="w3-container">
+	    <a href="index.html">
+        <img src="logo.png" alt="FC Leopard Atl Logo" class="logo">
+		</a>
+    </div>
+
+        </div>
+    </div><br>
+
+    <div class="container">
+	<h2 class="w3-center" style="color: black; font-family: 'Arial', sans-serif; font-size: 36px; text-shadow: 2px 2px 4px rgba(0, 128, 255);">Player Tryout Registration</h2>
+        <form action="process_registration.php" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br><br>
+
+            <label for="position">Position:</label>
+            <select id="position" name="position" required>
+			    <option value="GK">GK: Goalkeeper</option> 
+                <option value="CB">CB: Centre back</option>
+                <option value="LB">LB/RB: Full back</option>
+                <option value="CM">CM: Central midfielder</option>
+                <option value="CMD">CDM: Defensive midfielder</option>
+				<option value="CMD">CAM: Attacking midfielder</option>
+                <option value="DM">DM: Holding midfielder</option>
+                <option value="LW">LW: Left wing</option>
+                <option value="RW">RW: Right wing</option>
+                <option value="CF">CF: Centre forward</option>
+				<option value="CMD">ST: Striker</option>
+            </select><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+	<div id="dsktp-row-1">
+                    <div class="image-link-div">
+                        <a href="about.html">
+                            <div id="about-image-link">
+                                <h1>ABOUT US</h1>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="image-link-div">
+                        <a href="Donation.html">
+                            <div id="donate-image-link">
+                                <h1>DONATION</h1>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="image-link-div">
+                        <a href="gallery.html">
+                            <div id="volunteer-image-link">
+                                <h1>GALLERY</h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-container">
+            <div id="footer">
+				<div id="footer-info">
+					<p>Atlanta, GA</p>
+					<p>555-555-5555</p>
+					<a href="fcleopardatl@gmail.com">fcleopardatl@gmail.com</a>
+					<p id="copyright">Copyright &copy; 2024 Fc Leopard Atl | All Rights Reserved. </p>
+				</div>
+				<div id="social-icons-div">
+				<p id="message">
+					Visite our Socials medias!!
+				</p>
+					<a href="https://www.facebook.com/profile.php?id=61558173850946&mibextid=LQQJ4d&rdid=53fktzEAgYRKLDR1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FyUmaYhWcBAa9ew4T%2F%3Fmibextid%3DLQQJ4d" target="_blank"><img class="social-icon" src="content/images/facebook.png" /></a>
+					<a href="https://www.youtube.com/@fc.Leopardatl" target="_blank"><img class="social-icon" src="content/images/youtube.png" /></a>
+					<a href="https://app.mingle.sport/team/invite/P8Q9" target="_blank"><img class="social-icon" src="content/images/instagram.png" /></a>
+				</div>
+			</div>
+            <div id="commercial">
+                <p id="commercial-bar" onclick="HideVideo()">X &nbsp;</p>
+                <iframe width="150" height="120" src="https://www.youtube.com/embed/IOcFecCZP-k?si=-xaRonb0hILQCay3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+	<script>
+		function HideVideo()
+		{
+			document.getElementById("commercial").style.display = "none";
+		}
+		
+		function showMobileMenu()
+		{
+			//document.getElementById("commercial").style.display = "none";
+			var x = document.getElementById("mobile-menu-div");
+			var y = document.getElementById("borderline");
+			  if (x.style.display === "none") {
+				x.style.display = "block";
+				y.style.display = "none";
+			  } else {
+				x.style.display = "none";
+				y.style.display = "block";
+			  }
+		}
+	</script>
+</body>
+</html>
